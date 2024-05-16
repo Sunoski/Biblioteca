@@ -15,17 +15,26 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
             <hr>
             <ul style="text-align: start">
                 <li style="display: inline;">
-                    <a style="text-decoration: none; cursor: default; color: black" href="inicial.html">
-                       Inicio
+                    <a style="text-decoration: none; cursor: default; color: black" href="/logoff">
+                        Sair
+                    </a>
+                    <a style="margin-left: 3%; text-decoration: none; cursor: default; color: black" href="/">
+                        Procurar Livro
                     </a>
                 </li>
             </ul>
-            <hr style="margin-bottom: 10%;">
+            <hr style="margin-bottom: 0.1%;">
 
             <div id="POSTS">
-                <h1>Nada</h1>
+                <div th:each="postagem : ${postagens}"> 
+                    <h3 th:text="${postagem.titulo}+' - '+${postagem.author}"></h3>
+                    <h4 th:text="${postagem.subtitulo}"></h4>
+                    <p th:text="${postagem.texto}"></p>
+                    <hr>
+                </div>
             </div>
         </div>
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
         <script src="main.js"></script>
     </body>
 </html>

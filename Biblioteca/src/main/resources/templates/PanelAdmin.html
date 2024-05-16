@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Painel Administrativo</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div style="text-align: center;" id="main">
+            <div> 
+                <a style="background-color:#ededed; padding: 7px; display: inline-block;
+                   width: 100px; height: 20px; border-radius: 3px; border-style: none; text-decoration: none;
+                   cursor: default; color: black; cursor: pointer;" href="/logoff"> Sair </a>
+                <hr>
+                <h3>Cadastrar Livros</h3>
+                <hr style="margin-bottom: 0.2%;">
+
+                <div style="padding: 10px;">
+                    <input style="padding: 5px; margin: 5px; text-align:center;" id="Btitulo" type="text" placeholder="Título"><br>
+                    <input style="padding: 5px; margin: 5px; text-align:center;" id="Bsubtitulo" type="text" placeholder="Subtítulo"><br>
+                    <input style="padding: 5px; margin: 5px; text-align:center;" id="Bauthor" type="text" placeholder="Author"><br>
+                    <input style="padding: 5px; margin: 5px; text-align:center;" id="Bdescr" type="text" placeholder="Descrição"><br>
+
+                </div>
+                <a style="background-color:#ededed; padding: 7px; display: inline-block;
+                   width: 100px; height: 20px; border-radius: 3px; border-style: none; text-decoration: none;
+                   cursor: default; color: black; cursor: pointer;" onclick="button3()"> Adicionar </a>
+                <hr>
+            </div>
+            <div> 
+                <hr>
+                <h3>Postagem</h3>
+                <hr style="margin-bottom: 0.2%;">
+
+                <div style="padding: 10px;">
+                    <input style="padding: 5px; margin: 5px; text-align:center;" id="Ptitulo" type="text" placeholder="Título"><br>
+                    <input style="padding: 5px; margin: 5px; text-align:center;" id="Psubtitulo" type="text" placeholder="Subtítulo"><br>
+                    <input style="padding: 5px; margin: 5px; text-align:center;" id="Pauthor" type="text" placeholder="Author"><br>
+                    <input style="padding: 5px; margin: 5px; text-align:center;" id="texto" type="text" placeholder="Texto"><br>
+
+                </div>
+                <a style="background-color:#ededed; padding: 7px; display: inline-block;
+                   width: 100px; height: 20px; border-radius: 3px; border-style: none; text-decoration: none;
+                   cursor: default; color: black; cursor: pointer;" onclick="button4()"> Adicionar </a>
+                <hr>
+            </div>
+            <div> 
+                <hr>
+                <h3>Empréstimos</h3>
+                <hr style="margin-bottom: 0.2%;">
+
+                <div style="padding: 10px;">
+                    <input id="Bplivroid" style="padding: 5px; margin: 5px; text-align:center;" type="text" placeholder="Nome Do Livro"><br>
+                    <input id="Bprg" style="padding: 5px; margin: 5px; text-align:center;" type="text" placeholder="RG"><br>
+
+                </div>
+                <a style="background-color:#ededed; padding: 7px; display: inline-block;
+                   width: 100px; height: 20px; border-radius: 3px; border-style: none; text-decoration: none;
+                   cursor: default; color: black; cursor: pointer;" onclick="button6()"> Registrar </a>
+
+                <h3> Todos os Empréstimos </h3>
+                <a style="background-color:#ededed; padding: 7px; display: inline-block;
+                   width: 100px; height: 20px; border-radius: 3px; border-style: none; text-decoration: none;
+                   cursor: default; color: black; cursor: pointer;" href="#" onclick="button5()"> Atualizar </a>
+                <div id="tabela"><p> Não há empréstimos </p></div>
+                <hr>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        <script src="main.js"></script>
+    </body>
+</html>

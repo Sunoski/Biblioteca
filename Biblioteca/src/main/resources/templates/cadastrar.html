@@ -15,21 +15,23 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
             <hr>
             <ul style="text-align: start">
                 <li style="display: inline;">
-                    <a style="text-decoration: none; cursor: default; color: black" href="index.html">
+                    <a style="text-decoration: none; cursor: default; color: black" href="/">
                         Inicio
                     </a>
                 </li>
             </ul>
             <hr style="margin-bottom: 10%;">
 
-            <input style="padding: 10px; margin-bottom: 15px;" type="text" placeholder="Nome e Sobrenome"><br>
-            <input style="padding: 10px; margin-bottom: 15px;" type="text" placeholder="CPF ou RG"><br>
-            <input style="padding: 10px; margin-bottom: 15px;" type="text" placeholder="Telefone"><br>
+            <input id="username" style="padding: 10px; margin-bottom: 15px;" type="text" placeholder="Username"><br>
+            <input id="rg" style="padding: 10px; margin-bottom: 15px;" type="text" placeholder="CPF ou RG"><br>
+            <input id="telefone" style="padding: 10px; margin-bottom: 15px;" type="text" placeholder="Telefone"><br>
+            <input id="senha" style="padding: 10px; margin-bottom: 15px;" type="password" placeholder="Senha"><br>
 
             <a style="background-color:#ededed; padding: 7px; display: inline-block;
                 width: 100px; height: 20px; border-radius: 3px; border-style: none; text-decoration: none; 
-                cursor: default; color: black; cursor: pointer;" href="#"> Cadastrar </a>
+                cursor: default; color: black; cursor: pointer;" onclick="button1()"> Cadastrar </a>
         </div>
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
         <script src="main.js"></script>
     </body>
 </html>
